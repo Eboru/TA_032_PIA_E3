@@ -66,7 +66,7 @@ public class LangAnalyzer {
             if (isBlankString(line)) //Si la linea es blanca la saltamos
             {
                 error = new AnalysisOutput();
-                error.setStatus(AnalysisOutput.Status.SYNTAX_ERROR);
+                error.setStatus(AnalysisOutput.Status.LEXICAL_ERROR);
                 error.setCause("Linea en blanco");
                 error.setErrorLine(fileLine);
                 return error;
@@ -225,7 +225,7 @@ public class LangAnalyzer {
         if(status.hasFooter)
         {
             error.setStatus(AnalysisOutput.Status.SYNTAX_ERROR);
-            error.setCause("Hay más de una sentencia terminar! [ERROR LEXICO???]");
+            error.setCause("Hay más de una sentencia terminar");
             error.setErrorLine(fileLine);
             return error;
         }

@@ -403,7 +403,7 @@ public class ArithmeticBacktracer {
             clone = String.valueOf(newClone);
             for(int p=location+1; p<clone.length(); p++)
             {
-                if(matchesOperator(chars[p]) || p+1==clone.length())
+                if(matchesOperator(chars[p]) || (p+1==clone.length() && chars[p]=='0'))
                     return true;
                 if(chars[p] != '0')
                     break;

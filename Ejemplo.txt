@@ -1,10 +1,6 @@
-programa gato;
+programa nombre;
 iniciar
-leer i;
-leer j;
-leer kl;
-p := 2;
-k := p*2^4;
-q := (2/20-(p*kl)/10000/010);
-imprimir q;
+i := 2;
+identificador := 2/2*2*4/4*3*i/3;
+id2 := 2+identificador;
 terminar.
